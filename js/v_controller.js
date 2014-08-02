@@ -1,4 +1,4 @@
-var artpieceControllers = angular.module('artpieceControllers', []);
+var artpieceControllers = angular.module('artpieceControllers', ['ngAnimate']);
 
 artpieceControllers.controller('ListController',['$scope', '$http', function($scope, $http) {
 

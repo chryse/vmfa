@@ -22,7 +22,7 @@
 			</label>
 		</div>
 		<ul class="artpiece_list">
-			<li class="artpiece cf" ng-repeat="item in artpieces | limitTo : 100 | filter: query | orderBy: artpieceOrder:direction">
+			<li ng-animate="'animate'" class="artpiece cf" ng-repeat="item in artpieces | limitTo : artpieces.length | filter: query | orderBy: artpieceOrder:direction">
 				<a href="#/details/{{artpieces.indexOf(item)}}">
 					<img ng-src="images/thumbs/{{item.picture}}" alt="{{item.title}}"
 					<div>
