@@ -1,7 +1,3 @@
-<div>
-	<a href="#/details/{{prevItem}}" class="btn btn-left">&lt</a>
-	<a href="#/details/{{nextItem}}" class="btn btn-right">&gt</a>
-</div>
 <section class="artpiece_detail">
 	
 	<div class="artpiece cf" ng-model="artpieces">
@@ -14,6 +10,14 @@
 			<p class="bio">{{artpieces[whichItem].description}}</p>
 		</div>
 	</div>
+	
+	<a href="#/details/{{prevItem}}" id="btn-box-left">
+		<span id="btn-box-left-icon"> </span>
+	</a>
+	
+	<a href="#/details/{{nextItem}}" id="btn-box-right">
+		<span id="btn-box-right-icon"> </span>
+	</a>
 	
 	<a href="index.html">&lt&lt Back to search</a>
 </section>
