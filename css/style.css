@@ -242,7 +242,7 @@ a.small {
 	display: block;
 	position: absolute;
 	top: 0px;
-	width: 50px;
+	width: 100px;
 	height: 100%;
 	outline: none;
 	z-index: 999;
@@ -251,11 +251,11 @@ a.small {
 }
 
 #btn-box-left {
-	left: -25px;
+	left: -75px;
 }
 
 #btn-box-right {
-	right: -25px;
+	right: -75px;
 }
 
 #btn-box-left span,
@@ -273,6 +273,10 @@ a.small {
 	filter: alpha(opacity=40); /* For IE8 and earlier */
 	-webkit-transition: opacity 0.5s ease-in-out, opacity 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+#btn-box-left span {
+	left: 50px;
 }
 
 #btn-box-right span {
