@@ -313,7 +313,7 @@ a.small {
 .artpiece_list li {
   margin: 0;
   padding: 10px 10px 0 10px;
-  border-bottom: 1px dotted black;
+  border-bottom: 1px solid #023E54;
 }
 
 .artpiece_list a {
@@ -327,6 +327,40 @@ a.small {
 
 .artpiece_list li:hover {
   background: #FDF6E3;
+}
+
+
+/* artpiece list animate */
+
+.artpiece_list li {
+  opacity: .9;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.artpiece_list li:hover {
+  background: #FDF6E3;
+  opacity: 1;
+  -webkit-transform: scale(1.005);
+  -moz-transform: scale(1.005);
+  -ms-transform: scale(1.005);
+  transform: scale(1.005);
+}
+
+.artpiece.ng-enter.ng-enter-active,
+.artpiece.ng-leave {
+  opacity: 0.5;
+  height: 80px;
+  overflow: hidden;
+}
+
+.artpiece.ng-leave.ng-leave-active,
+.artpiece.ng-enter {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 /* Artpiece detail */
